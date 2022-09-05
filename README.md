@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://avatars.githubusercontent.com/u/85664936?v=4">
         <img
-            src="https://readme-typing-svg.herokuapp.com?font=Hey+printing&color=5D0F99&size=32&lines=WELCOME+TO+DRAGON+X_MATHIYA+BOT"
+            src="https://readme-typing-svg.herokuapp.com?font=Hey+printing&color=5D0F99&size=32&lines=WELCOME+TO+DRAGON+X_SUDDA+WABOT"
             alt="Typing SVG"
         />
     </a>
@@ -14,7 +14,7 @@
 
 <div align="center">
   
-## [![X_MATHIYA](https://readme-typing-svg.herokuapp.com?font=Road+Rage&color=5D0F99&lines=welcome+to+DRAGON-X_MATHIYA+Bot;+this+Bot+was+created+Sohan;+this+is+the+first+wa+Bot+with+extraordinary+features)] 
+## [![X_MATHIYA](https://readme-typing-svg.herokuapp.com?font=Road+Rage&color=5D0F99&lines=welcome+to+DRAGON-X_SUDDA+WABOT;+this+Bot+was+created+Sohan;+this+is+the+first+wa+Bot+with+extraordinary+features)] 
 
  </a>
 </p>
