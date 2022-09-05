@@ -6,7 +6,7 @@
 
 > <a href="https://youtube.com"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
-> [Automated Multi Device whatsapp bot created](https://github.com/Mathiya578/DragonX-Sudda-WABOT) by [nexusNw](github.com/Mathiya578)
+> [Automated Multi Device whatsapp bot created](https://github.com/Mathiya578/DragonX-Sudda-WABOT) by [Sohan](github.com/Mathiya578)
 
 > Dont forget to give a star bro.🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
 
