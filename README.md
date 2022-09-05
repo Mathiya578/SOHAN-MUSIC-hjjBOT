@@ -61,8 +61,8 @@ Add FFmpeg to PATH environment variable
 > pkg install ffmpeg -y 
 > pkg install wget
 > pkg install imagemagick -y
-> git clone https://github.com/nexusNw/Gojo-Satoru
-> cd Gojo-Satoru
+> git clone https://github.com/Mathiya578/DragonX-Sudda-WABOT
+> cd DragonX-Sudda-WABOT
 > npm install
 ```
 </details>
@@ -124,7 +124,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ## ```Connect With Me```
 <p align="center">
 <a href="https://wa.me/94779499811"><img src="https://img.shields.io/badge/Contact Sohan-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://youtube.com/channel/pending"><img src="https://img.shields.io/badge/Subscribe Sohan-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+
 </p>
 
 </details>
