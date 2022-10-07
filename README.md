@@ -12,7 +12,7 @@
 
 </br>
 
-<a href="https://github.com/Mathiya578"><img title="Author" src="https://img.shields.io/badge/Author-nexusNw-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
+<a href="https://github.com/Mathiya578"><img title="Author" src="https://img.shields.io/badge/Author-Sohan Matheesha-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
 <a href="https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot"><img title="Stars" src="https://img.shields.io/github/stars/Mathiya578/CyberX-MATHIYA-Music-Bot?color=54aeff&style=flat-square" /></a>
 <a href="https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mathiya578/CyberX-MATHIYA-Music-Bot?color=54aeff&style=flat-square" /></a>
 <a href="https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Mathiya578/CyberX-MATHIYA-Music-Bot?label=watchers&color=54aeff&style=flat-square" /></a> <br>
