@@ -1,24 +1,24 @@
 <p align="center">
-<img src="mathiyabot.jpg" alt="nz" width="350"/>
+<img src="https://telegra.ph/file/f3b2f9e862e1352d4fd94.jpg" alt="nz" width="350"/>
 </p>
 
-## DragonX-Sudda-WABOT
+## Gojo-Satoru
 
-> <a href="https://youtube.com"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+> <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
-> [Automated Multi Device whatsapp bot created](https://github.com/Mathiya578/DragonX-Sudda-WABOT) by [Sohan](github.com/Mathiya578)
+> [Automated Multi Device whatsapp bot created](https://github.com/nexusNw/Gojo-Satoru) by [nexusNw](github.com/nexusNw)
 
 > Dont forget to give a star bro.🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
 
-> If The Api Of This Bot Run Empty You Can Change it To Your Own Api By Changing [Here](https://github.com/Mathiya578/DragonX-Sudda-WABOT/blob/master/settings.js#L18) And Register [here](https://zenzapis.xyz/) to get apikey
+> If The Api Of This Bot Run Empty You Can Change it To Your Own Api By Changing [Here](https://github.com/nexusNw/Gojo-Satoru/blob/master/settings.js#L18) And Register [here](https://zenzapis.xyz/) to get apikey
 
 
 </br>
 
-<a href="https://github.com/Mathiya578"><img title="Author" src="https://img.shields.io/badge/Author-Sohan-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
-<a href="https://github.com/Mathiya578/DragonX-Sudda-WABOT"><img title="Stars" src="https://img.shields.io/github/stars/nexusNw/DragonX-Sudda-WABOT?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/Mathiya578/DragonX-Sudda-WABOT/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mathiya578/DragonX-Sudda-WABOT?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/Mathiya578/DragonX-Sudda-WABOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Mathiya578/DragonX-Sudda-WABOT?label=watchers&color=54aeff&style=flat-square" /></a> <br>
+<a href="https://github.com/nexusNw"><img title="Author" src="https://img.shields.io/badge/Author-nexusNw-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
+<a href="https://github.com/nexusNw/Gojo-Satoru"><img title="Stars" src="https://img.shields.io/github/stars/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
+<a href="https://github.com/nexusNw/Gojo-Satoru/network/members"><img title="Forks" src="https://img.shields.io/github/forks/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
+<a href="https://github.com/nexusNw/Gojo-Satoru/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/nexusNw/Gojo-Satoru?label=watchers&color=54aeff&style=flat-square" /></a> <br>
 
 ---
 
@@ -38,8 +38,8 @@ Add FFmpeg to PATH environment variable
 <!-- Start via Heroku -->
 <b><details><summary>Start via Heroku</summary></b>
 
-* Scan QR In Your Whatsapp From [Here](developing)
-
+* Scan QR In Your Whatsapp From [Here](https://replit.com/@nexusNw/M-D-SCANNER-V2?v=1?outputonly=1&lite=1#index.js)
+* Fork This Repo By Clicking [Here](https://github.com/nexusNw/Gojo-Satoru/fork)
 * then Deploy The Bot From [Here](https://heroku.com/deploy)
 * Wait 5-10 Min To Deploy 
 * After Deploying On The Worker And Check The Logs
@@ -61,8 +61,8 @@ Add FFmpeg to PATH environment variable
 > pkg install ffmpeg -y 
 > pkg install wget
 > pkg install imagemagick -y
-> git clone https://github.com/Mathiya578/DragonX-Sudda-WABOT
-> cd DragonX-Sudda-WABOT
+> git clone https://github.com/nexusNw/Gojo-Satoru
+> cd Gojo-Satoru
 > npm install
 ```
 </details>
@@ -74,8 +74,8 @@ global.APIKeys = {
 	'https://zenzapis.xyz': 'YOURAPIKEY',
 }
   
-global.owner = ["9477949911"]
-global.ownername = ["Sohan"]
+global.owner = ["9181XXXXXX"]
+global.ownername = ["YourName"]
 ```
 </details>
 
@@ -123,8 +123,8 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/94779499811"><img src="https://img.shields.io/badge/Contact Sohan-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-
+<a href="https://wa.me/918129624000"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 </p>
 
 </details>
@@ -134,4 +134,9 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
+* [`Alien-Alfa`](https://github.com/Alien-Alfa)
+* [`DGXeon`](https://github.com/DGXeon)
+* [`AflahXrd`](https://github.com/nexusNw)
 
+
+License: [MIT](https://github.com/Gojo-Satoru/LICENSE)
