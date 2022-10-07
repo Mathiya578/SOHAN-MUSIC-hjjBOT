@@ -1,5 +1,5 @@
 <p align="center">
-<img src="sohan.jpg" alt="nz" width="350"/>
+<img src="Sohan.jpg" alt="nz" width="350"/>
 </p>
 
 ## CyberX-MATHIYA-Music-Bot
