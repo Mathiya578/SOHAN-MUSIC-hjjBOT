@@ -202,11 +202,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MATHIYA-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MATHIYA-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -260,25 +260,25 @@ const reply = (teks) => {
         //auto reply 
         for (let anji of setik){
 				if (budy === anji){
-					result = fs.readFileSync(`./GojoMedia/sticker/${anji}.webp`)
+					result = fs.readFileSync(`./sohanmedia/sticker/${anji}.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
 				if (budy === anju){
-					result = fs.readFileSync(`./GojoMedia/vn/${anju}.mp3`)
+					result = fs.readFileSync(`./sohanmedia/vn/${anju}.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
 				if (budy === anjh){
-					result = fs.readFileSync(`./GojoMedia/image/${anjh}.jpg`)
+					result = fs.readFileSync(`./sohanmedia/image/${anjh}.jpg`)
 					GojoMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 					for (let anjh of videox){
 				if (budy === anjh){
-					result = fs.readFileSync(`./GojoMedia/vid/${anjh}.mp4`)
+					result = fs.readFileSync(`./sohanmedia/vid/${anjh}.mp4`)
 					GojoMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -1496,14 +1496,14 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 │
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 │
@@ -1512,8 +1512,8 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 
 *${prefix}delvote* - To Delete Vote Session`
 let buttonsVote = [
-  {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
-  {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
+  {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
+  {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
 ]
 
             let buttonMessageVote = {
@@ -1537,14 +1537,14 @@ let buttonsVote = [
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1553,8 +1553,8 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsUpvote = [
-              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
-              {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
+              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
+              {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
             ]
 
             let buttonMessageUpvote = {
@@ -1579,14 +1579,14 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE HIRU〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1595,8 +1595,8 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsDevote = [
-              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
-              {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
+              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
+              {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
             ]
 
             let buttonMessageDevote = {
@@ -1617,14 +1617,14 @@ teks_vote = `*「 VOTE 」*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE HIRU〕
 │ 
 ┃╠ Total: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE HIRU〕
 │ 
 ┃╠ Total: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1673,8 +1673,8 @@ break
                 await GojoMdNx.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Closed Edit Group Info`)).catch((err) => reply(jsonformat(err)))
              } else {
              let buttons = [
-                        { buttonId: 'editinfo open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'editinfo close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'editinfo open', buttonText: { displayText: 'OPEN' }, type: 1 },
+                        { buttonId: 'editinfo close', buttonText: { displayText: 'CLOSE' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, `Mode Edit Info`, GojoMdNx.user.name, m)
 
@@ -1695,8 +1695,8 @@ break
                 reply(`Antilink Inactive !`)
                 } else {
                  let buttons = [
-                        { buttonId: 'antilink on', buttonText: { displayText: 'On' }, type: 1 },
-                        { buttonId: 'antilink off', buttonText: { displayText: 'Off' }, type: 1 }
+                        { buttonId: 'ANTILINK ON', buttonText: { displayText: 'On' }, type: 1 },
+                        { buttonId: 'ANTILINK OFF', buttonText: { displayText: 'Off' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, `Antilink Mode`, GojoMdNx.user.name, m)
                 }
@@ -1759,26 +1759,26 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Script🔖',
+                                    displayText: 'SCRIPT',
                                     url: `${sc}`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'CONTACT DEVELOPER',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: 'MENU',
                                     id: 'menu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'OWNER',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE🎉 」\n\n${text}`
+                      let txt = `「CyberX-MUSIC-BOT HERE」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1793,26 +1793,26 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Script🔖',
+                                    displayText: 'SCRIPT',
                                     url: `${sc}`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'CONTACT DEVELOPER',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: 'MENU',
                                     id: 'menu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'OWNER',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE 🎉」\n\n${text}`
+                      let txt = `「 CyberX-MUSIC-BOT HERE」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -2083,8 +2083,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎶Audio🎶'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: 'AUDIO'}, type: 1},
+                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: 'VIDEO'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2278,7 +2278,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "Watch🎥",
+						"displayText": "CONTACT DEVELOPER",
 						"url": `${myweb}`
 						}
 					}
@@ -2303,7 +2303,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "CONTACT DEVELOPER",
 						"url": `${myweb}`
 						}
 					}
@@ -2772,8 +2772,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: 'WITH WATERMARK'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'WITH AUDIO'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.nowatermark },
@@ -2790,8 +2790,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'NO WATERMARK'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'AUDIO'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.watermark },
@@ -2808,8 +2808,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/musically', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'NO WATERMARK'}, type: 1},
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: 'WITH WATERMARK'}, type: 1}
                 ]
                 let buttonMessage = {
                     text: `Download From ${text}`,
@@ -2863,7 +2863,7 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: 'AUDIO'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.HD || anu.result.SD },
@@ -2880,7 +2880,7 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twitter ${text}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `twitter ${text}`, buttonText: {displayText: 'VIDEO'}, type: 1}
                 ]
                 let buttonMessage = {
 		    image: { url: anu.result.thumb },
@@ -2913,8 +2913,8 @@ break
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
-                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '🎵Audio🎵'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: 'AUDIO'}, type: 1},
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: 'VIDEO'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
@@ -3376,12 +3376,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')},
                             hydratedFooterText: `┌─❖
-│「 Hi 👋 」
+│「 Hi  」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Shashi burina thaicho🎉
-││✑  🐦🖐️!!
+┌┤✑  CyberX-MUSIC-BOT
+││✑  I AM  ONLINE NOW
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3397,27 +3397,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'DEVELOPER',
                                     url: `${myweb}`
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'Script🔖',
+                                displayText: 'SCRIPT',
                                     url: `${sc}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: 'ALL MENU',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: 'LIST MENU',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'OWNER',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3436,12 +3436,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')}, 
+                            jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')}, 
                             hydratedFooterText: `
 ┌─❖
-│「 Hi 👋 」
+│「 Hi  」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Daijobka sempai?😄
+┌┤✑  HOW ARE YOU
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3457,27 +3457,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'CONTACT DEVELOPER',
                                     url: `${myweb}`
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'Script🔖',
+                                displayText: 'SCRIPT',
                                     url: `${sc}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu🎉',
+                                    displayText: 'ALL MENU',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu⭐',
+                                    displayText: 'LIST MENU',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner🐦',
+                                    displayText: 'OWNER',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3499,7 +3499,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Main Features",
 								"rows": [
 									{
-										"title": "Main Menu",
+										"title": "MAIN MENu",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}mainmenu`
 									}
@@ -3509,77 +3509,77 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Bot Features",
 								"rows": [
 									{
-										"title": "All Menu",
+										"title": "All MENU",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu",
+										"title": "OWNER MENU",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu",
+										"title": "GROUP MENU",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "Rpg Menu",
+										"title": "RPG MENU",
 										"description": "Displays The List Of Rpg Features",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "Download Menu",
+										"title": "DOWNLOAD MENU",
 										"description": "Displays The List Of Download Features",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Search Menu",
+										"title": "SEARCH MENU",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "Random Menu",
+											"title": "RANDOM MENU",
 										"description": "Displays The List Of Random Features",
 										"rowId": `${prefix}randommenu`
 										},
 										{
-											"title": "Random Anime Menu",
+											"title": "RANDOM ANIME MENU",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
-											"title": "Fun Menu",
+											"title": "FUN MENU",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "Convert Menu",
+											"title": "CONVERT MENU",
 										"description": "Displays The List Of Convert Features",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu",
+											"title": "DATABASE MENU",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "Voice Changer Menu",
+											"title": "VOICE CHANGER MENU",
 										"description": "Displays The List Of Voice Changing Features",
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
-											"title": "TXT-to-IMG Menu",
+											"title": "TEXT-TO-IMAGE MENU",
 										"description": "Displays The List Of Textpro Features",
 										"rowId": `${prefix}textpromenu`
 										},
 										{
-											"title": "Islamic Menu",
+											"title": "ISLAMIC MENU",
 										"description": "Displays The List Of Islamic Features",
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
-											"title": "Horoscope Menu",
+											"title": "HOROSCOPE MENU",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}horoscopemenu`
 										}
@@ -3589,7 +3589,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Chat With Fellow Users",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu",
+										"title": "ANONYMOUS CHAT MENU",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymouschatmenu`
 									}
@@ -3599,7 +3599,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Credit",
 								"rows": [
 									{
-										"title": "Thanks To",
+										"title": "THANKS TO",
 										"description": "Displays The List Of Credit Of The Bot !!",
 										"rowId": `${prefix}tqtt`
 									}
@@ -3617,7 +3617,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/nexusNw/Gojo-Satoru\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : https://github.com/Mathiya578/CyberX-MATHIYA-MUSIC-BOT\n Dont Forget To Give Star\n\ndeveloper : ${myweb}\nDont Forget HIRU baba`)
             }
             break
 case 'allmenu': {
@@ -3848,23 +3848,23 @@ case 'allmenu': {
 ┃╠${prefix}masasubur (indo)
 ┃╠${prefix}zodiak (indo)
 ┃╠${prefix}shio (indo)
-┃╚═══════✍︎𝑁𝑒𝑥𝑢𝑠𝑁𝑤
+┃╚═══════✍︎Hiru
 ┗━「 *Created By ${ownername}*  𖠌」━⭓`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')},
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'CONTACT DEVELOPER',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'Owner',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3893,7 +3893,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}donate
 ┃╠ ${prefix}report [bug]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -3922,7 +3922,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
@@ -3940,7 +3940,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}buy [option]
 ┃╠${prefix}sell [option]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -3993,7 +3993,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}math [mode]
 ┃╠ ${prefix}suitpvp [tag]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -4022,7 +4022,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4037,7 +4037,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}joox [query]
 ┃╠${prefix}soundcloud [url]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developeer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4056,7 +4056,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}ringtone [query]
 ┃╠${prefix}webtoon [query]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4067,7 +4067,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}animequote (indo)
 ┃╠${prefix}couplepp
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4102,7 +4102,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}dance
 ┃╠${prefix}cringe
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4141,7 +4141,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}blackpink [txt]
 ┃╠ ${prefix}gluetext [txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4160,7 +4160,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}ebinary [reply txt]
 ┃╠ ${prefix}dbinary [reply txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Conatct Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4176,7 +4176,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}getmsg
 ┃╠ ${prefix}delmsg
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4188,7 +4188,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}next
 ┃╠${prefix}leave
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4197,7 +4197,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔══✪「 ISLAMIC 」	        
 ┃╠${prefix}juzamma
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4216,7 +4216,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}slow [reply aud]
 ┃╠${prefix}squirrel [reply aud]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4254,15 +4254,13 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}zodiak (indo)
 ┃╠${prefix}shio (indo)
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-Thanks to Me ( NexusNw)
-Alien-Alfa (For helping me to deploy qr in replit and answered my every doubts regard this project)
-DGXeon ( 45% Credits goes to him ,in this script)
-And Again Me (King Nexus 🎉) 🐦 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+Thanks to Me ( SOHAN-MATHEESHA)
+HIRU BABA!!!`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
