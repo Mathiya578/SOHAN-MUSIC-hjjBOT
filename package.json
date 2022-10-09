@@ -1,5 +1,5 @@
 {
-  "name": "Gojo-Satoru",
+  "name": "CyberX-MATHIYA-Music-Bot",
   "version": "2.0.0",
   "description": "WhatsApp Using Lib Baileys Multi Device",
   "main": "index.js",
@@ -11,14 +11,14 @@
     "termux",
     "whatsapp",
     "2022",
-    "GojoSatoru",
+    "CyberX-MATHIYA-Music-Bot",
     "base",
     "baileys-md",
     "bot",
     "bot-md",
     "multi-device"
   ],
-  "author": "NexusNw",
+  "author": "Sohan Matheesha",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.1",
@@ -65,10 +65,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nexusNw/Gojo-Satoru.git"
+    "url": "git+https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/nexusNw/Gojo-Satoru/issues"
+    "url": "https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot/issues"
   },
-  "homepage": "https://github.com/nexusNw/Gojo-Satoru#readme"
+  "homepage": "https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot#readme"
 }
