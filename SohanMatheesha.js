@@ -202,11 +202,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MATHIYA-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/sohan123.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MATHIYA-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` CyberX-MUSIC-BOT`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./sohanmedia/sohan123.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -594,7 +594,7 @@ if (q.includes('--help')) return reply(examkosong)
      teksehmazeh += `*🐄Cow* : ${getSapi(m.sender)}\n`
      teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
      teksehmazeh += `_*${pushname}*_`
-     await GojoMdNx.send5ButImg(from, `` + '' + teksehmazeh, `© ${footer}`, GojoMdNx, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}}])
+     await GojoMdNx.send5ButImg(from, `` + '' + teksehmazeh, `© ${footer}`, GojoMdNx, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}}])
   }
   break
         case 'userlimit': 
@@ -1496,14 +1496,14 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔AUTOMATIC UPVOTE HIRU〕
+┌〔AUTOMATIC UPVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 │
 │ 
 └────
 
-┌〔AUTOMATIC DEVOTE HIRU〕
+┌〔AUTOMATIC DEVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 │
@@ -1512,8 +1512,8 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 
 *${prefix}delvote* - To Delete Vote Session`
 let buttonsVote = [
-  {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
-  {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
+  {buttonId: `${prefix}upvote`, buttonText: {displayText: '🎲UPVOTE🎲'}, type: 1},
+  {buttonId: `${prefix}devote`, buttonText: {displayText: '🎲DEVOTE🎲'}, type: 1}
 ]
 
             let buttonMessageVote = {
@@ -1537,14 +1537,14 @@ let buttonsVote = [
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔AUTOMATIC UPVOTE HIRU〕
+┌〔AUTOMATIC UPVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔AUTOMATIC DEVOTE HIRU〕
+┌〔AUTOMATIC DEVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1553,8 +1553,8 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsUpvote = [
-              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
-              {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
+              {buttonId: `${prefix}upvote`, buttonText: {displayText: '🎲UPVOTE🎲'}, type: 1},
+              {buttonId: `${prefix}devote`, buttonText: {displayText: '🎲DEVOTE🎲'}, type: 1}
             ]
 
             let buttonMessageUpvote = {
@@ -1579,14 +1579,14 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔AUTOMATIC UPVOTE HIRU〕
+┌〔AUTOMATIC UPVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔AUTOMATIC DEVOTE HIRU〕
+┌〔AUTOMATIC DEVOTE〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1595,8 +1595,8 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsDevote = [
-              {buttonId: `${prefix}upvote`, buttonText: {displayText: 'UPVOTE HIRU'}, type: 1},
-              {buttonId: `${prefix}devote`, buttonText: {displayText: 'DEVOTE HIRU'}, type: 1}
+              {buttonId: `${prefix}upvote`, buttonText: {displayText: '🎲UPVOTE🎲'}, type: 1},
+              {buttonId: `${prefix}devote`, buttonText: {displayText: '🎲DEVOTE🎲'}, type: 1}
             ]
 
             let buttonMessageDevote = {
@@ -1617,14 +1617,14 @@ teks_vote = `*「 VOTE 」*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔AUTOMATIC UPVOTE HIRU〕
+┌〔AUTOMATIC UPVOTE〕
 │ 
 ┃╠ Total: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔AUTOMATIC DEVOTE HIRU〕
+┌〔AUTOMATIC DEVOTE〕
 │ 
 ┃╠ Total: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -1793,22 +1793,22 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'SCRIPT',
+                                    displayText: '❄️SCRIPT❄️',
                                     url: `${sc}`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'CONTACT DEVELOPER',
+                                    displayText: '🥀CONTACT DEVELOPER🙂',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'MENU',
+                                    displayText: '🔥MENU🔥',
                                     id: 'menu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'OWNER',
+                                    displayText: '🎀OWNER🎀',
                                     id: 'owner'
                                 }
                             }]
@@ -2089,16 +2089,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🐦 Title : ${anu.title}
-🐦 Ext : Search
-🐦 ID : ${anu.videoId}
-🐦 Duration : ${anu.timestamp}
-🐦 Viewes : ${anu.views}
-🐦 Uploaded On : ${anu.ago}
-🐦 Author : ${anu.author.name}
-🐦 Channel : ${anu.author.url}
-🐦 Description : ${anu.description}
-🐦 Url : ${anu.url}`,
+ Title : ${anu.title}
+Ext : Search
+🌹⃝✥⃟☺️᭄ꦿ ID : ${anu.videoId}
+🌹⃝✥⃟☺️᭄ꦿDuration : ${anu.timestamp}
+🌹⃝✥⃟☺️᭄ꦿ Viewes : ${anu.views}
+🌹⃝✥⃟☺️᭄ꦿ Uploaded On : ${anu.ago}
+🌹⃝✥⃟☺️᭄ꦿAuthor : ${anu.author.name}
+🌹⃝✥⃟☺️᭄ꦿChannel : ${anu.author.url}
+🌹⃝✥⃟☺️᭄ꦿDescription : ${anu.description}
+🌹⃝✥⃟☺️᭄ꦿUrl : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2278,7 +2278,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "CONTACT DEVELOPER",
+						"displayText": "🥀CONTACT DEVELOPER🙂",
 						"url": `${myweb}`
 						}
 					}
@@ -2303,7 +2303,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "CONTACT DEVELOPER",
+						"displayText": "🥀CONTACT DEVELOPER🙂",
 						"url": `${myweb}`
 						}
 					}
@@ -2327,7 +2327,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "🥀Contact Developer🙂",
 						"url": `${myweb}`
 						}
 					}
@@ -2772,8 +2772,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: 'WITH WATERMARK'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'WITH AUDIO'}, type: 1}
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '❄️WITH WATERMARK❄️'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵WITH AUDIO🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.nowatermark },
@@ -2790,8 +2790,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'NO WATERMARK'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'AUDIO'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '❄️NO WATERMARK❄️'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵AUDIO🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.watermark },
@@ -2808,8 +2808,8 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/musically', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'NO WATERMARK'}, type: 1},
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: 'WITH WATERMARK'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '❄️NO WATERMARK❄️'}, type: 1},
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🎵WITH WATERMARK🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     text: `Download From ${text}`,
@@ -2863,7 +2863,7 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: 'AUDIO'}, type: 1}
+                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '🎵AUDIO🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.HD || anu.result.SD },
@@ -2880,7 +2880,7 @@ break
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twitter ${text}`, buttonText: {displayText: 'VIDEO'}, type: 1}
+                    {buttonId: `twitter ${text}`, buttonText: {displayText: '🎲VIDEO🎲'}, type: 1}
                 ]
                 let buttonMessage = {
 		    image: { url: anu.result.thumb },
@@ -2913,17 +2913,17 @@ break
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
-                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: 'AUDIO'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: 'VIDEO'}, type: 1}
+                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '🎵AUDIO🎵'}, type: 1},
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '🎲VIDEO🎲'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-🐦 Title : ${anu.title}
-🐦 Author : ${anu.author.name}
-🐦 Like : ${anu.like}
-🐦 Caption : ${anu.caption}
-🐦 Url : ${anu.media[0]}
+🎲 Title : ${anu.title}
+🎲 Author : ${anu.author.name}
+🎲 Like : ${anu.like}
+🎲 Caption : ${anu.caption}
+🎲 Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
 			footer: GojoMdNx.user.name,
@@ -3378,9 +3378,9 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')},
                             hydratedFooterText: `┌─❖
-│「 Hi  」
+│「 Hi 🌹⃝✥⃟☺️᭄ꦿ 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  CyberX-MUSIC-BOT
+┌┤✑ 🎲CyberX-MUSIC-BOT🎲
 ││✑  I AM  ONLINE NOW
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
@@ -3397,27 +3397,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'DEVELOPER',
+                                    displayText: '🎀DEVELOPER🎀',
                                     url: `${myweb}`
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'SCRIPT',
+                                displayText: '❄️SCRIPT❄️',
                                     url: `${sc}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'ALL MENU',
+                                    displayText: '🔥ALL MENU🔥',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'LIST MENU',
+                                    displayText: '♣️LIST MENU♣️',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'OWNER',
+                                    displayText: '💥OWNER💥',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3436,10 +3436,10 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')}, 
+                            jpegThumbnail: fs.readFileSync('./sohanmedia/sohan123.jpg')}, 
                             hydratedFooterText: `
 ┌─❖
-│「 Hi  」
+│「 Hi 🌹⃝✥⃟☺️᭄ꦿ」
 └┬❖ 「 ${pushname} 」
 ┌┤✑  HOW ARE YOU
 │└───────────────┈ ⳹
@@ -3457,27 +3457,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'CONTACT DEVELOPER',
+                                    displayText: '🎀CONTACT DEVELOPER🎀',
                                     url: `${myweb}`
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'SCRIPT',
+                                displayText: '❄️SCRIPT❄️',
                                     url: `${sc}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'ALL MENU',
+                                    displayText: '🔥ALL MENU🔥',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'LIST MENU',
+                                    displayText: '♣️LIST MENU♣️',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'OWNER',
+                                    displayText: '💥OWNER💥',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3499,8 +3499,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Main Features",
 								"rows": [
 									{
-										"title": "MAIN MENu",
-										"description": "Displays The List Of Main Features",
+										"title": "🎲MAIN MENU🎲",
+									        "description": "displays the list of main menu!", 
 										"rowId": `${prefix}mainmenu`
 									}
 								]
@@ -3509,77 +3509,77 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Bot Features",
 								"rows": [
 									{
-										"title": "All MENU",
+										"title": "🎲All MENU🎲",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "OWNER MENU",
+										"title": "🎲OWNER MENU🎲",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "GROUP MENU",
+										"title": "🎲GROUP MENU🎲",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "RPG MENU",
+										"title": "🎲RPG MENU🎲",
 										"description": "Displays The List Of Rpg Features",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "DOWNLOAD MENU",
+										"title": "🎲DOWNLOAD MENU🎲",
 										"description": "Displays The List Of Download Features",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "SEARCH MENU",
+										"title": "🎲SEARCH MENU🎲",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "RANDOM MENU",
+											"title": "🎲RANDOM MENU🎲",
 										"description": "Displays The List Of Random Features",
 										"rowId": `${prefix}randommenu`
 										},
 										{
-											"title": "RANDOM ANIME MENU",
+											"title": "🎲RANDOM ANIME MENU🎲",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
-											"title": "FUN MENU",
+											"title": "🎲FUN MENU🎲",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "CONVERT MENU",
+											"title": "🎲CONVERT MENU🎲",
 										"description": "Displays The List Of Convert Features",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "DATABASE MENU",
+											"title": "🎲DATABASE MENU🎲",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "VOICE CHANGER MENU",
+											"title": "🎲VOICE CHANGER MENU🎲",
 										"description": "Displays The List Of Voice Changing Features",
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
-											"title": "TEXT-TO-IMAGE MENU",
+											"title": "🎲TEXT-TO-IMAGE MENU🎲",
 										"description": "Displays The List Of Textpro Features",
 										"rowId": `${prefix}textpromenu`
 										},
 										{
-											"title": "ISLAMIC MENU",
+											"title": "🎲ISLAMIC MENU🎲",
 										"description": "Displays The List Of Islamic Features",
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
-											"title": "HOROSCOPE MENU",
+											"title": "🎲HOROSCOPE MENU🎲",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}horoscopemenu`
 										}
@@ -3589,7 +3589,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Chat With Fellow Users",
 								"rows": [
 									{
-										"title": "ANONYMOUS CHAT MENU",
+										"title": "🎲ANONYMOUS CHAT MENU🎲",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymouschatmenu`
 									}
@@ -3599,7 +3599,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Credit",
 								"rows": [
 									{
-										"title": "THANKS TO",
+										"title": "🎀THANKS TO🎀",
 										"description": "Displays The List Of Credit Of The Bot !!",
 										"rowId": `${prefix}tqtt`
 									}
@@ -3617,7 +3617,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/Mathiya578/CyberX-MATHIYA-MUSIC-BOT\n Dont Forget To Give Star\n\ndeveloper : ${myweb}\nDont Forget HIRU baba`)
+                reply(`GitHub : https://github.com/Mathiya578/CyberX-MUSIC-BOT\n Dont Forget To Give Star\n\ndeveloper : ${myweb}\nDont Forget HIRU baba`)
             }
             break
 case 'allmenu': {
@@ -3855,16 +3855,16 @@ case 'allmenu': {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./sohanmedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./sohanmedia/sohan123.jpg')},
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'CONTACT DEVELOPER',
+                                    displayText: '🥀CONTACT DEVELOPER🙂',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner',
+                                    displayText: '💥Owner💥',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3893,7 +3893,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}donate
 ┃╠ ${prefix}report [bug]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -3922,7 +3922,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
@@ -3940,7 +3940,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}buy [option]
 ┃╠${prefix}sell [option]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -3993,7 +3993,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}math [mode]
 ┃╠ ${prefix}suitpvp [tag]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -4022,7 +4022,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4037,7 +4037,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}joox [query]
 ┃╠${prefix}soundcloud [url]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developeer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developeer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4056,7 +4056,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}ringtone [query]
 ┃╠${prefix}webtoon [query]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4067,7 +4067,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}animequote (indo)
 ┃╠${prefix}couplepp
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4102,7 +4102,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}dance
 ┃╠${prefix}cringe
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4141,7 +4141,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}blackpink [txt]
 ┃╠ ${prefix}gluetext [txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4160,7 +4160,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}ebinary [reply txt]
 ┃╠ ${prefix}dbinary [reply txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Conatct Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Conatct Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4176,7 +4176,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}getmsg
 ┃╠ ${prefix}delmsg
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4188,7 +4188,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}next
 ┃╠${prefix}leave
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4197,7 +4197,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔══✪「 ISLAMIC 」	        
 ┃╠${prefix}juzamma
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4216,7 +4216,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}slow [reply aud]
 ┃╠${prefix}squirrel [reply aud]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4254,13 +4254,13 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}zodiak (indo)
 ┃╠${prefix}shio (indo)
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-Thanks to Me ( SOHAN-MATHEESHA)
-HIRU BABA!!!`,unicorn, [{"urlButton": {"displayText": "Contact Developer","url": `${myweb}`}},{"urlButton": {"displayText": "Script","url": `${sc}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+Thanks to Me ( SOHAN-MATHEESHA
+!!`,unicorn, [{"urlButton": {"displayText": "🥀Contact Developer🙂","url": `${myweb}`}},{"urlButton": {"displayText": "❄️Script❄️","url": `${sc}`}},{"quickReplyButton": {"displayText": "😺Donate😺","id": 'donate'}},{"quickReplyButton": {"displayText": "🎲Owner🎲","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
