@@ -15,7 +15,7 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 # ```Bot Info```
 <p align="center">
-<a href="https://github.com/Mathiya578/followers"><img title="Followers" src="https://img.shields.io/github/followers Mathiya578?color=red&style=flat-square"></a>
+<a href="https://github.com/Mathiya578/followers"><img title="Followers" src="https://img.shields.io/github/followers/ Mathiya578?color=red&style=flat-square"></a>
 <a href="https://github.com/Mathiya578/CYBERX-MATHIYA-MUSIC-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Mathiya578/CYBERX-MATHIYA-MUSIC-BOT?color=blue&style=flat-square"></a>
 <a href="https://github.com/Mathiya578/CYBERX-MATHIYA-MUSIC-BOT/Network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mathiya578/CYBERX-MATHIYA-MUSIC-BOT?color=red&style=flat-square"></a>
 <a href="https://github.com/Mathiya578/CYBERX-MATHIYA-MUSIC-BOTwatchers"><img title="Watching" src="https://img.shields.io/github/watchers/Mathiya578/CYBERX-MATHIYA-MUSIC-BOT?label=Watchers&color=blue&style=flat-square"></a>
