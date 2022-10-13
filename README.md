@@ -2,7 +2,7 @@
 
 <h1 align="center">CYBERMAFIA-MUSIC-BOT<br></h1>
 <p align="center">
-<img src="mafia.jpg" width="1000" height="1100" />
+<img src="mafia.jpg" width="800" height="800" />
 </p>
 
 <p align="center">
