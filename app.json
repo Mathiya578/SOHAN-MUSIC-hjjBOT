@@ -1,8 +1,8 @@
 {
-  "name": "CyberX-MATHIYA-Music-Bot",
+  "name": "CheemsBot-MD",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/Mathiya578/CyberX-MATHIYA-Music-Bot",
-  "logo": "https://telegra.ph/sohan-10-13",
+  "repository": "https://github.com/DGXeon/CheemsBot-MD4",
+  "logo": "https://pbs.twimg.com/media/FO7fojOakAAyYgt?format=jpg&name=900x900",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
@@ -11,9 +11,6 @@
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
-    {
-            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
-        },
     {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
