@@ -35,7 +35,7 @@ Add FFmpeg to PATH environment variable
 
 * Scan QR In Your Whatsapp From [Here](https://replit.com/@Mathiya578/Sohan-QR-Generator?output%20only=1&lite=1#index.js)
 
-* then Deploy The Bot From [Here](https://heroku.com/deploy)
+* then Deploy The Bot From [Here](https://heroku.com/deploy?template=https://github.com/Mathiya578/CyberX-Music-BOT)
 * Wait 5-10 Min To Deploy 
 * After Deploying On The Worker And Check The Logs
 
