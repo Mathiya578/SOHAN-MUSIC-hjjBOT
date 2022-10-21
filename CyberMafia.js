@@ -190,10 +190,10 @@ const {
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
-let xeonysticker = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xeonyaudio = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let xeonyimage = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xeonyvideo = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let xeonysticker = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let xeonyaudio = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let xeonyimage = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xeonyvideo = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -472,11 +472,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./CyberMedia/theme/mafia.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./CyberMedia/theme/mafia.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -752,28 +752,28 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice
   //if (Autoreply) //remove forwad slashes to make it autoreply on off
         for (let anji of xeonysticker){
 				if (budy === anji){
-					result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
+					result = fs.readFileSync(`./CyberMedia/sticker/${anji}.webp`)
 					XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of xeonyaudio){
 				if (budy === anju){
-					result = fs.readFileSync(`./XeonMedia/audio/${anju}.mp3`)
+					result = fs.readFileSync(`./CyberMedia/audio/${anju}.mp3`)
 					XeonBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anjh of xeonyimage){
 				if (budy === anjh){
-					result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
+					result = fs.readFileSync(`./CyberMedia/image/${anjh}.jpg`)
 					XeonBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 					for (let anjh of xeonyvideo){
 				if (budy === anjh){
-					result = fs.readFileSync(`./XeonMedia/video/${anjh}.mp4`)
+					result = fs.readFileSync(`./CyberMedia/video/${anjh}.mp4`)
 					XeonBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -786,7 +786,7 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText: `${botname}`,buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Welcome",footerText: `${botname}`,buttons: buttons,headerType: 4}
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
@@ -1111,8 +1111,8 @@ const latensie = speed() - timestampe
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑ CYBER-MAFIA-MUSIC-BOT
+   │✑Develop By Sohan Matheesha
    └─────────────┈ ⳹`
    
    //randoming function
@@ -2442,14 +2442,14 @@ if (isBanChat) return reply(mess.banChat)
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 │
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 │
@@ -2485,14 +2485,14 @@ if (isBanChat) return reply(mess.banChat)
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -2529,14 +2529,14 @@ if (isBanChat) return reply(mess.banChat)
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC  UPVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE 〕
 │ 
 ┃╠ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -2569,14 +2569,14 @@ teks_vote = `*「 VOTE 」*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔AUTOMATIC UPVOTE 〕
 │ 
 ┃╠ Total: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔AUTOMATIC DEVOTE 〕
 │ 
 ┃╠ Total: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
@@ -3224,27 +3224,27 @@ for (let i of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'CONTACT DEVELOPER',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'SCRIPT',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'BOT STATEUS',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'MENU',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'OWNER',
 id: 'owner'
 }
 }]
@@ -3265,27 +3265,27 @@ for (let yoi of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'CONTACT DEVELOPER',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'SCRIPT',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'BOT STATEUS',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'MENU',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'OWNER',
 id: 'owner'
 }
 }]
@@ -3301,33 +3301,33 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./CyberMedia/theme/mafia.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
                     let butoon = [{
                                 urlButton: {
-                                displayText: 'YouTube 🍓',
+                                displayText: 'CONTACT DEVELOPER',
 url: `${global.websitex}`
                                 }
                             }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'SCRIPTS',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'BOT STATEUS',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'MENU',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'OWNER',
 id: 'owner'
 }
 }]
@@ -5439,9 +5439,9 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/horror-blood-text-effect-online-883.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak innna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
   case 'whitebear':{
@@ -5449,9 +5449,9 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`Poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'thunder2':{
@@ -5459,9 +5459,9 @@ case 'thunder2':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-thunder-text-effect-online-881.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'blackpink':{
@@ -5469,9 +5469,9 @@ case 'blackpink':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-blackpink-logo-style-online-1001.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak innna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked by Sohan"}, {quoted:m})
 }
    break
 case 'neon':{
@@ -5479,9 +5479,9 @@ case 'neon':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/neon-light-text-effect-online-882.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'matrix2':{
@@ -5489,9 +5489,9 @@ case 'matrix2':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/matrix-style-text-effect-online-884.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'sky':{
@@ -5499,9 +5499,9 @@ case 'sky':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 
@@ -5510,9 +5510,9 @@ case 'magma':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-a-magma-hot-text-effect-online-1030.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'sand':{
@@ -5520,9 +5520,9 @@ case 'sand':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/sand-writing-text-effect-online-990.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'pencil':{
@@ -5530,9 +5530,9 @@ case 'pencil':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-a-sketch-text-effect-online-1044.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'graffiti':{
@@ -5540,9 +5540,9 @@ case 'graffiti':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'metallic':{
@@ -5550,9 +5550,9 @@ case 'metallic':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-a-metallic-text-effect-free-online-1041.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'steel':{
@@ -5560,9 +5560,9 @@ case 'steel':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/steel-text-effect-online-921.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'harrypotter':{
@@ -5570,9 +5570,9 @@ case 'harrypotter':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-harry-potter-text-effect-online-1025.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'underwater':{
@@ -5580,9 +5580,9 @@ case 'underwater':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/3d-underwater-text-effect-generator-online-1013.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'luxury':{
@@ -5590,9 +5590,9 @@ case 'luxury':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/3d-luxury-gold-text-effect-online-1003.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'glue2':{
@@ -5600,9 +5600,9 @@ case 'glue2':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennnam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'fabric':{
@@ -5610,9 +5610,9 @@ case 'fabric':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/fabric-text-effect-online-964.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'neonlight':{
@@ -5620,9 +5620,9 @@ case 'neonlight':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/neon-light-glitch-text-generator-online-1063.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`podddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'lava':{
@@ -5630,9 +5630,9 @@ case 'lava':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/lava-text-effect-online-914.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'toxic':{
@@ -5640,9 +5640,9 @@ case 'toxic':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/toxic-text-effect-online-901.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'ancient':{
@@ -5650,9 +5650,9 @@ case 'ancient':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'christmas2':{
@@ -5660,9 +5660,9 @@ case 'christmas2':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/sparkles-merry-christmas-text-effect-1054.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked BY Sohan"}, {quoted:m})
 }
    break
 case 'sci_fi':{
@@ -5670,9 +5670,9 @@ case 'sci_fi':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'rainbow':{
@@ -5680,9 +5680,9 @@ case 'rainbow':{
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html`
      let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'classic':{
@@ -5690,9 +5690,9 @@ case 'classic':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/video-game-classic-8-bit-text-effect-1037.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'watercolor2':{
@@ -5700,9 +5700,9 @@ case 'watercolor2':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'halloween2':{
@@ -5710,9 +5710,9 @@ case 'halloween2':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-a-spooky-halloween-text-effect-online-1046.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked BY Sohan"}, {quoted:m})
 }
    break
 case 'halloweenfire':{
@@ -5720,9 +5720,9 @@ case 'halloweenfire':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/halloween-fire-text-effect-940.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'writing':{
@@ -5730,9 +5730,9 @@ case 'writing':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/sand-writing-text-effect-online-990.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'foggy':{
@@ -5740,9 +5740,9 @@ case 'foggy':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/write-text-on-foggy-window-online-free-1015.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'marvel':{
@@ -5750,9 +5750,9 @@ case 'marvel':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-logo-style-marvel-studios-ver-metal-972.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'skeleton2':{
@@ -5760,9 +5760,9 @@ case 'skeleton2':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-halloween-skeleton-text-effect-online-1047.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked by Sohan"}, {quoted:m})
 }
    break
 case 'sketch':{
@@ -5770,9 +5770,9 @@ case 'sketch':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-a-sketch-text-effect-online-1044.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked BY Sohan"}, {quoted:m})
 }
    break
 case 'wonderful':{
@@ -5780,9 +5780,9 @@ case 'wonderful':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'cool':{
@@ -5790,9 +5790,9 @@ case 'cool':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'collwall':{
@@ -5800,9 +5800,9 @@ case 'collwall':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`podak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'multicolor2':{
@@ -5810,9 +5810,9 @@ case 'multicolor2':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'batman':{
@@ -5820,9 +5820,9 @@ case 'batman':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/make-a-batman-logo-online-free-1066.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'juice':{
@@ -5830,9 +5830,9 @@ case 'juice':{
 if (isBanChat) return reply(mess.banChat)
 let link = `https://textpro.me/fruit-juice-text-effect-861.html`
 let anui = await textpro(link, q)
-     reply(`Wait a moment while making the logo about 1 minute`) 
+     reply(`poddak inna hadala dennam`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maked By Sohan"}, {quoted:m})
 }
    break
 case 'pornhub':{
@@ -5846,7 +5846,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Maked By Sohan"},{quoted:m})
 }
 break
 case 'retro':{
@@ -5860,7 +5860,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/create-3d-retro-text-effect-online-free-1065.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Maked By Sohan"},{quoted:m})
 }
 break
 case 'horror':{
@@ -5874,7 +5874,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/create-a-cinematic-horror-text-effect-1045.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Maked By Sohan"},{quoted:m})
 }
 break
 case '8bit':{
@@ -5888,7 +5888,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/video-game-classic-8-bit-text-effect-1037.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Maked By Sohan"},{quoted:m})
 }
 break
 case 'emoji': {
@@ -6855,7 +6855,7 @@ if (isBanChat) return reply(mess.banChat)
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "CONTACT DEVELOPER",
 						"url": `${websitex}`
 						}
 					}
@@ -7998,7 +7998,7 @@ break
 } )
    console.log(musim_rambutan)
    const xeonytiktoknowm = musim_rambutan.result.nowatermark
-    XeonBotInc.sendMessage(from, { video: { url: xeonytiktoknowm }, caption: "Here you go!" }, { quoted: m })
+    XeonBotInc.sendMessage(from, { video: { url: xeonytiktoknowm }, caption: "Convert By Sohan" }, { quoted: m })
    }
   break
   case 'tiktokaudio':
@@ -8764,7 +8764,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
+thumbnail: fs.readFileSync("CyberMedia/theme/mafia.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
 sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
@@ -8779,27 +8779,27 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube 🍒',
+                                    displayText: 'CONTACT DEVELOPER',
                                     url: `${websitex}`
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Script 🍜',
+                                    displayText: 'SCRIPT',
                                     url: `${botscript}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 🍱',
+                                    displayText: 'ALL MENU',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 🍢',
+                                    displayText: 'LIST MENU',
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🤣',
+                                    displayText: 'OWNER',
                                     id: 'owner'
                                 }
                             }]
@@ -8816,13 +8816,13 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
-        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
-            { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+        	{ urlButton: { displayText: `contact developer`, url : `${websitex}` } },
+            { urlButton: { displayText: `script`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `All Menu`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `List Menu`, id: 'command'} },
+            { quickReplyButton: { displayText: `Owner`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./CyberMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
@@ -8840,117 +8840,117 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Initial Features Of Bot 🦄",
 								"rows": [
 									{
-										"title": "Other ☕",
+										"title": "Other",
 										"description": "Displays The List Of Other Features",
 										"rowId": `${prefix}othermenu`
 									}
 								]
 							},
 							{
-								"title": "Bot Features ❤️",
+								"title": "Bot Features",
 								"rows": [
 									{
-										"title": "All Menu 🥀",
+										"title": "All Menu",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu 💠",
+										"title": "Owner Menu",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu ✨",
+										"title": "Group Menu",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu 🌈",
+										"title": "Maker Menu",
 										"description": "Displays The List Of Logo Making Features",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Sound Menu 🎵",
+										"title": "Sound Menu",
 										"description": "Displays The List Of Sound Features",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "Download Menu ↘️",
+										"title": "Download Menu",
 										"description": "Displays The List Of Download Features",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Sticker Menu 🃏",
+										"title": "Sticker Menu",
 										"description": "Displays The List Of Sticker Features",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Search Menu 🔎",
+										"title": "Search Menu",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "Tool Menu ⚙️",
+										"title": "Tool Menu ",
 										"description": "Displays The List Of Tool Features",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
-										"title": "Random Image Menu 🌆",
+										"title": "Random Image Menu ",
 										"description": "Displays The List Of Random Image Features",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Image Effect Menu 🖼️",
+										"title": "Image Effect Menu",
 										"description": "Displays The List Of Image Effect Features",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
-											"title": "Anime Menu 😘",
+											"title": "Anime Menu",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "Emote Menu 😀",
+											"title": "Emote Menu ",
 										"description": "Displays The List Of Emote Features",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "Anime Sticker Menu ☺️",
+										"title": "Anime Sticker Menu",
 										"description": "Displays The List Of Anime Sticker Features",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "Nsfw Menu 🤓",
+										"title": "Nsfw Menu",
 										"description": "Displays The List Of Nsfe Features",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
-											"title": "Fun Menu 🕺",
+											"title": "Fun Menu",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "Game Menu 🎮",
+										"title": "Game Menu",
 										"description": "Displays The List Of Game Features",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Convert Menu ⚒️",
+											"title": "Convert Menu ",
 										"description": "Displays The List Of Convert Features",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu ♻️",
+											"title": "Database Menu ",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-										"title": "Indo Menu  🦜",
+										"title": "Indo Menu  ",
 										"description": "Displays The List Of Indo Features",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Horoscope Menu 🕊️",
+											"title": "Horoscope Menu ",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}indohoroscopemenu`
 										}
@@ -8960,7 +8960,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Chat With Fellow Users 🌝",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
+										"title": "Anonymous Chat Menu 🏻‍♂️",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymousmenu`
 									}
@@ -8970,7 +8970,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Credit ©️",
 								"rows": [
 									{
-										"title": "Thanks To ❤️",
+										"title": "Thanks To ",
 										"description": "Displays The List Of Credit Of The Bot !!",
 										"rowId": `${prefix}tqtt`
 									}
@@ -9706,7 +9706,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}donate
 ╠ ${prefix}request
 ╠ ${prefix}report [bug]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
@@ -9731,7 +9731,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}bcloc [text]
 ╠ ${prefix}setppbot [image]
 ╠ ${prefix}setexif
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner ","id": 'owner'}}] )
 break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9777,7 +9777,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 GROUP 」
 ╠${prefix}upvote
 ╠${prefix}checkvote
 ╠${prefix}delvote
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome ","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate ","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner ","id": 'owner'}}] )
 break
 case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9795,7 +9795,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 RPG 」
 ╠${prefix}profile
 ╠${prefix}inventory
 ╠${prefix}leaderboard
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
@@ -9862,7 +9862,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 MAKER 」
 ╠${prefix}window
 ╠${prefix}graffiti
 ╠${prefix}graffitibike
-╠${prefix}pornhub
+╠${prefix}sohan
 ╠${prefix}glitch
 ╠${prefix}blackpink
 ╠${prefix}glitch2
@@ -9909,7 +9909,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 MAKER 」
 ╠ ${prefix}halloween
 ╠ ${prefix}watercolor
 ╠ ${prefix}classic
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9936,7 +9936,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 DOWNLOAD 」
 ╠${prefix}gitclone [repo link]
 ╠${prefix}soundcloud [url]
 ╠${prefix}zippyshare [url]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9968,7 +9968,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 SEARCH 」
 ╠${prefix}wattpad [query]
 ╠ ${prefix}mcserver [ip|port]
 ╠${prefix}drakor [query]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10003,7 +10003,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 CONVERT 」
 ╠${prefix}robot [reply aud]
 ╠${prefix}slow [reply aud]
 ╠${prefix}squirrel [reply aud]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'randomimagemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10022,7 +10022,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 RANDOM IMG �
 ╠${prefix}wallcode
 ╠${prefix}animewall [query]
 ╠${prefix}animewall2 [query]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 
 case 'emotemenu':
@@ -10042,7 +10042,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 EMOTE 」
 ╠${prefix}googleemoji
 ╠${prefix}pediaemoji
 ╠${prefix}microsoftemoji
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'imageeffectmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10063,7 +10063,7 @@ await XeonBotInc.send5ButImg(from, `╔═════✪「 IMG EFFECT 」
 ╠${prefix}beautifuleffect
 ╠${prefix}deleteeffect
 ╠${prefix}pixelate
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'animemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10117,7 +10117,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 ANIME 」
 ╠${prefix}megumin2
 ╠${prefix}loli
 ╠${prefix}couplepp
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'stickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10131,7 +10131,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 STICKER 」
 ╠ ${prefix}ttp
 ╠ ${prefix}doge
 ╠ ${prefix}lovesticker
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'animestickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10167,7 +10167,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 ANIME STICKER
 ╠${prefix}cringe
 ╠${prefix}neko
 ╠${prefix}gura
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'nsfwmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10199,7 +10199,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 NSFW 」
 ╠${prefix}spank
 ╠${prefix}hneko
 ╠${prefix}nwaifu
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'funmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10270,7 +10270,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 Fun 」
 ╠ ${prefix}playboy
 ╠ ${prefix}fuckgirl
 ╠ ${prefix}playgirl
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10438,7 +10438,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 Sound 」
 ╠ ${prefix}sound159
 ╠ ${prefix}sound160
 ╠ ${prefix}sound161
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'gamemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10452,7 +10452,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 GAME 」
 ╠ ${prefix}guess [option]
 ╠ ${prefix}math [mode]
 ╠ ${prefix}suitpvp [tag]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'anonymousmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10463,7 +10463,7 @@ await XeonBotInc.send5ButImg(from, `╔═══✪「 ANONYMOUS 」
 ╠${prefix}start
 ╠${prefix}next
 ╠${prefix}leave
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'toolmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10473,7 +10473,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 TOOL 」
 ╠ ${prefix}translate [text]
 ╠ ${prefix}fliptext [text]
 ╠ ${prefix}toletter [number]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'databasemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10488,7 +10488,7 @@ await XeonBotInc.send5ButImg(from, `╔═══✪「 DATABASE 」
 ╠ ${prefix}listmsg
 ╠ ${prefix}getmsg
 ╠ ${prefix}delmsg
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'indomenu':
 	   if (isBan) return reply(mess.ban)
@@ -10519,7 +10519,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 INDO 」
 ╠${prefix}covidindo
 ╠${prefix}earthquake
 ╠${prefix}tvschedule
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'indohoroscopemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10556,7 +10556,7 @@ await XeonBotInc.send5ButImg(from, `╔═✪「 INDO HOROSCOPE 」
 ╠${prefix}masasubur
 ╠${prefix}zodiak
 ╠${prefix}shio
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'othermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10581,16 +10581,13 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OTHER 」
 ╠ ${prefix}donate
 ╠ ${prefix}request
 ╠ ${prefix}report [bug]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "welcome","url": `${websitex}`}},{"urlButton": {"displayText": "Script","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(`Thanks to
-LORD BUDDHA
-Xeon (Me)
-My family
-And all friends who helped assemble this sexy script !!!`)
+Sohan Matheesha.....`)
 break
             default:
                 if (budy.startsWith('=>')) {
@@ -10655,7 +10652,7 @@ if (listTag.includes(partiNum)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./CyberMedia/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
@@ -10664,7 +10661,7 @@ if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./CyberMedia/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
