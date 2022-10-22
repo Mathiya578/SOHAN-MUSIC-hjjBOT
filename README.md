@@ -1,12 +1,12 @@
 
 
-<h1 align="center">CYBERMAFIA-MUSIC-BOT<br></h1>
+<h1 align="center">CYBER-MAFIA-MUSIC-BOT<br></h1>
 <p align="center">
 <img src="mafia.jpg" width="800" height="800" />
 </p>
 
 <p align="center">
-Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/Mathiya578" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
 
 
@@ -31,8 +31,7 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/94757962326"><img src="https://img.shields.io/badge/Contact Xeon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS"><img src="https://img.shields.io/badge/Join Official GC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/94757962326"><img src="https://img.shields.io/badge/Contact Sohan-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"><img src="https://img.shields.io/badge/our website-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 </p>
 
@@ -62,7 +61,7 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD4/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2Fgithub.com%2FMathiya578%2FCYBER-MAFIA-MUSIC-BOT&template=https%3A%2F%2Fgithub.com%2FMathiya578%2FCYBER-MAFIA-MUSIC-BOT)
 
 # Install Manually 👇
 ## `Requirements`
@@ -73,7 +72,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/Mathiya578/CYBERMAFIA-MUSIC-BOT.git
+git clone https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT.git
 cd CYBERMAFIA-MUSIC-BOT
 
 npm start
@@ -90,7 +89,7 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/Mathiya578/CYBERMAFIA-MUSIC-BOT
+git clone https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT
 cd CYBERMAFIA-MUSIC-BOT
 npm start
 ```
