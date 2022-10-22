@@ -16,13 +16,13 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 # ```Bot Info```
 <p align="center">
 <a href="https://github.com/Mathiya578/followers"><img title="Followers" src="https://img.shields.io/github/followers/ Mathiya578?color=red&style=flat-square"></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIYA-MUSIC-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Mathiya578/CYBER-MAFIYA-MUSIC-BOT?color=blue&style=flat-square"></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT/Network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mathiya578/CYBER-MAFIYA-MUSIC-BOT?color=red&style=flat-square"></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOTwatchers"><img title="Watching" src="https://img.shields.io/github/watchers/Mathiya578/CYBER-MAFIYA-MUSIC-BOT?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIYA-MUSIC-BOT"><img title="Open Source" src="https://img.shields.io/badge/Author-Sohan%20Bot%20Inc.-red?v=103"></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIYA-MUSIC-BOT/"><img title="Size" src="https://img.shields.io/github/repo-size/Mathiya578/CYBER-MAFIYA-MUSIC-BOT?style=flat-square&color=green"></a>
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Mathiya578/CYBER-MAFIA-MUSIC-BOT?color=blue&style=flat-square"></a>
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT/Network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mathiya578/CYBER-MAFIA-MUSIC-BOT?color=red&style=flat-square"></a>
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOTwatchers"><img title="Watching" src="https://img.shields.io/github/watchers/Mathiya578/CYBER-MAFIA-MUSIC-BOT?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT"><img title="Open Source" src="https://img.shields.io/badge/Author-Sohan%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT/"><img title="Size" src="https://img.shields.io/github/repo-size/Mathiya578/CYBER-MAFIA-MUSIC-BOT?style=flat-square&color=green"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD4&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/Mathiya578/CYBER-MAFIYA-MUSIC-BOT/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
     </p>
