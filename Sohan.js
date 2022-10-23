@@ -77,7 +77,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['Contact Sohan','Safari','1.0.0'],
         auth: state
     })
 
@@ -190,7 +190,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./CyberMedia/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
@@ -231,10 +231,10 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'WelCome🥀'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./CyberMedia/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
