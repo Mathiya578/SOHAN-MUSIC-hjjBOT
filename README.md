@@ -2,7 +2,7 @@
 
 <h1 align="center">CYBER-MAFIA-MUSIC-BOT<br></h1>
 <p align="center">
-<img src="mathiya-md.jpg" width="900" height="900"/>
+<img src="mathiya-md.jpg" width="1280" height="1280"/>
 </p>
 
 <p align="center">
