@@ -1,7 +1,7 @@
 {
-  "name": "CheemsBot-MD",
+  "name": "SOHAN-MUSIC-BOT",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/DGXeon/CheemsBot-MD4",
+  "repository": "https://github.com/Mathiya578/SOHAN-MUSIC-BOT",
   "logo": "https://i.ibb.co/0GQhr6g/mathiya-md.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
