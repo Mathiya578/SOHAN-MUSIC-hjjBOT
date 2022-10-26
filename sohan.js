@@ -234,7 +234,7 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'BYE'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./CyberMedia/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
