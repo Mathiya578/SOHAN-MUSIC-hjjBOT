@@ -1,7 +1,7 @@
 {
-  "name": "CYBER-MAFIA-MUSIC-BOT",
+  "name": "Gojo-Satoru",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/Mathiya578/CYBER-MAFIA-MUSIC-BOT",
+  "repository": "https://github.com/nexusNw/Gojo-Satoru",
   "logo": "https://i.ibb.co/0GQhr6g/mathiya-md.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
@@ -11,6 +11,9 @@
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
+        },
     {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
