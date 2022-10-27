@@ -2,7 +2,7 @@
   "name": "SOHAN-MUSIC-BOT",
   "version": "4.0.0",
   "description": "Automated whatsapp md bot created using nodejs",
-  "main": "soham.js",
+  "main": "sohan.js",
   "type": "commonjs",
   "scripts": {
     "start": "node sohan.js"
