@@ -75,7 +75,7 @@ global.author = "Sohan Matheesha" //ur sticker watermark author
 //Bot theme media
 global.thum = fs.readFileSync("./CyberMedia/theme/cheemspic123.jpg") //ur thumb pic
 global.log0 = fs.readFileSync("./CyberMedia/theme/cheemspic123.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./CyerMedia/theme/cheemspic123.jpg") //ur error pic
+global.err4r = fs.readFileSync("./CyberMedia/theme/cheemspic123.jpg") //ur error pic
 global.thumb = fs.readFileSync("./CyberMedia/theme/cheemspic123.jpg") //ur thumb pic
 
 //damtabase
