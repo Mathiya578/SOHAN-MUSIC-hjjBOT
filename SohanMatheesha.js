@@ -190,10 +190,10 @@ const {
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
-let xeonysticker = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xeonyaudio = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let xeonyimage = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xeonyvideo = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let xeonysticker = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let xeonyaudio = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let xeonyimage = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xeonyvideo = JSON.parse(fs.readFileSync('./CyberMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -316,7 +316,7 @@ if (!('templateVideo' in setting)) setting.templateVideo = false
 	
 	// FAKE TEXT IMG
 const textImg = (teks) => {
-XeonBotInc.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileSync('./XeonMedia/image/wpmobile.png')}) 
+XeonBotInc.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileSync('./CyberMedia/image/wpmobile.png')}) 
 }
 
 //FAKE CONTACT
@@ -472,11 +472,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./CyberMedia/theme/cheemspic123.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./CyberMedia/theme/cheemspic123.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -752,28 +752,28 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice
   //if (Autoreply) //remove forwad slashes to make it autoreply on off
         for (let anji of xeonysticker){
 				if (budy === anji){
-					result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
+					result = fs.readFileSync(`./CyberMedia/sticker/${anji}.webp`)
 					XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of xeonyaudio){
 				if (budy === anju){
-					result = fs.readFileSync(`./XeonMedia/audio/${anju}.mp3`)
+					result = fs.readFileSync(`./CyberMedia/audio/${anju}.mp3`)
 					XeonBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anjh of xeonyimage){
 				if (budy === anjh){
-					result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
+					result = fs.readFileSync(`./CyberMedia/image/${anjh}.jpg`)
 					XeonBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 					for (let anjh of xeonyvideo){
 				if (budy === anjh){
-					result = fs.readFileSync(`./XeonMedia/video/${anjh}.mp4`)
+					result = fs.readFileSync(`./CyberMedia/video/${anjh}.mp4`)
 					XeonBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -1094,7 +1094,7 @@ const reactionMessage = {
                 const timestampe = speed();
 const latensie = speed() - timestampe
                 const menulist = `┌─❖
-│「 Hi 👋 」
+│「 Hi Manika 」
 └┬❖ 「 ${pushname} 」
 ┌┤✑  How Are You? 😄
 │└────────────┈ ⳹
@@ -1111,7 +1111,7 @@ const latensie = speed() - timestampe
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
 └┬────────────┈ ⳹
-   │✑  Please Select
+   │✑  Developer By Sohan Matheesha
    │✑  The Button Below
    └─────────────┈ ⳹`
    
@@ -2211,7 +2211,7 @@ case 'dare':
     "Mention the incident that makes you hurt that you still remember",
     "what achievements have you got this year?",
     "what was your worst habit at school?",
-    "do you love the bot creator, xeon?ðŸ¦„",
+    "do you love the bot creator, sohan¦„",
     "have you ever thought of taking revenge from ur teacher?",
     "do you like current prime minister of ur country",
     "you non veg or veg",
@@ -3301,7 +3301,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./CyberMedia/theme/cheemspic123.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
@@ -5441,7 +5441,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
   case 'whitebear':{
@@ -5451,7 +5451,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'thunder2':{
@@ -5461,7 +5461,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'blackpink':{
@@ -5471,7 +5471,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'neon':{
@@ -5481,7 +5481,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'matrix2':{
@@ -5491,7 +5491,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'sky':{
@@ -5501,7 +5501,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 
@@ -5512,7 +5512,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'sand':{
@@ -5522,7 +5522,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'pencil':{
@@ -5532,7 +5532,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'graffiti':{
@@ -5542,7 +5542,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'metallic':{
@@ -5552,7 +5552,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'steel':{
@@ -5562,7 +5562,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'harrypotter':{
@@ -5572,7 +5572,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'underwater':{
@@ -5582,7 +5582,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'luxury':{
@@ -5592,7 +5592,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'glue2':{
@@ -5602,7 +5602,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'fabric':{
@@ -5612,7 +5612,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'neonlight':{
@@ -5622,7 +5622,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'lava':{
@@ -5632,7 +5632,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan!"}, {quoted:m})
 }
    break
 case 'toxic':{
@@ -5642,7 +5642,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'ancient':{
@@ -5652,7 +5652,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'christmas2':{
@@ -5662,7 +5662,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'sci_fi':{
@@ -5672,7 +5672,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'rainbow':{
@@ -5682,7 +5682,7 @@ if (isBanChat) return reply(mess.banChat)
      let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'classic':{
@@ -5692,7 +5692,7 @@ let link = `https://textpro.me/video-game-classic-8-bit-text-effect-1037.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made BY Sohan"}, {quoted:m})
 }
    break
 case 'watercolor2':{
@@ -5702,7 +5702,7 @@ let link = `https://textpro.me/create-a-free-online-watercolor-text-effect-1017.
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'halloween2':{
@@ -5712,7 +5712,7 @@ let link = `https://textpro.me/create-a-spooky-halloween-text-effect-online-1046
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Maddee By Sohan"}, {quoted:m})
 }
    break
 case 'halloweenfire':{
@@ -5722,7 +5722,7 @@ let link = `https://textpro.me/halloween-fire-text-effect-940.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'writing':{
@@ -5732,7 +5732,7 @@ let link = `https://textpro.me/sand-writing-text-effect-online-990.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'foggy':{
@@ -5742,7 +5742,7 @@ let link = `https://textpro.me/write-text-on-foggy-window-online-free-1015.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'marvel':{
@@ -5752,7 +5752,7 @@ let link = `https://textpro.me/create-logo-style-marvel-studios-ver-metal-972.ht
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'skeleton2':{
@@ -5762,7 +5762,7 @@ let link = `https://textpro.me/create-halloween-skeleton-text-effect-online-1047
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'sketch':{
@@ -5772,7 +5772,7 @@ let link = `https://textpro.me/create-a-sketch-text-effect-online-1044.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'wonderful':{
@@ -5782,7 +5782,7 @@ let link = `https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.ht
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'cool':{
@@ -5792,7 +5792,7 @@ let link = `https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'collwall':{
@@ -5802,7 +5802,7 @@ let link = `https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'multicolor2':{
@@ -5812,7 +5812,7 @@ let link = `https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.h
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made By Sohan"}, {quoted:m})
 }
    break
 case 'batman':{
@@ -5822,7 +5822,7 @@ let link = `https://textpro.me/make-a-batman-logo-online-free-1066.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made BY sohan"}, {quoted:m})
 }
    break
 case 'juice':{
@@ -5832,7 +5832,7 @@ let link = `https://textpro.me/fruit-juice-text-effect-861.html`
 let anui = await textpro(link, q)
      reply(`Wait a moment while making the logo about 1 minute`) 
      console.log(anui)
-    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
+    XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Made BY Sohan"}, {quoted:m})
 }
    break
 case 'pornhub':{
@@ -5860,7 +5860,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/create-3d-retro-text-effect-online-free-1065.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Made By Sohan.."},{quoted:m})
 }
 break
 case 'horror':{
@@ -5874,7 +5874,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/create-a-cinematic-horror-text-effect-1045.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Made By Sohan.."},{quoted:m})
 }
 break
 case '8bit':{
@@ -5888,7 +5888,7 @@ inilogo9 = args.join(" ")
 var logo9 = inilogo9.split('|')[1]
     let anu = await textpro("https://textpro.me/video-game-classic-8-bit-text-effect-1037.html", [`${logo4}`,`${logo9}`])
 console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
+XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Made By Sohan.."},{quoted:m})
 }
 break
 case 'emoji': {
@@ -8764,10 +8764,10 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
+thumbnail: fs.readFileSync("CyberMedia/theme/cheemspic123.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
-sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
+mediaUrl: 'https://ibb.co/6NsDhQs/cheemspic123.jpg',
+sourceUrl: "https://ibb.co/6NsDhQs/cheemspic123.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8822,7 +8822,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
-        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./CyberMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
@@ -10587,10 +10587,8 @@ case 'tqtt':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(`Thanks to
-LORD BUDDHA
-Xeon (Me)
-My family
-And all friends who helped assemble this sexy script !!!`)
+Bot Credit By 
+Sohan Matheesha `)
 break
             default:
                 if (budy.startsWith('=>')) {
@@ -10655,7 +10653,7 @@ if (listTag.includes(partiNum)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./CyberMedia/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
@@ -10664,7 +10662,7 @@ if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./XeonMedia/theme/yourtag.webp')
+sendNye = fs.readFileSync('./CyberMedia/theme/yourtag.webp')
 XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XeonBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
