@@ -1,5 +1,5 @@
 {
-  "name": "AlexaX-Devil-Sudda-MD-BOT",
+  "name": "SOHAN-MUSIC-BOT",
   "version": "4.0.0",
   "description": "Automated whatsapp md bot created using nodejs",
   "main": "Mathiya.js",
@@ -75,10 +75,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mathiya578/AlexaX-Devil-Sudda-MD-BOT-.git"
+    "url": "git+https://github.com/Mathiya578/SOHAN-MUSIC-BOT.git"
   },
   "bugs": {
-    "url": "https://github.com/Mathiya578/AlexaX-Devil-Sudda-MD-BOT-/issues"
+    "url": "https://github.com/Mathiya578/SOHAN-MUSIC-BOT/issues"
   },
-  "homepage": "https://github.com/Mathiya578/AlexaX-Devil-Sudda-MD-BOT-#readme"
+  "homepage": "https://github.com/Mathiya578/SOHAN-MUSIC-BOT#readme"
 }
