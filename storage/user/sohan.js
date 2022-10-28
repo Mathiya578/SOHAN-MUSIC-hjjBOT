@@ -1,3 +1,0 @@
-{
-	"name": " SOHAN-MUSIC-BOT"
-}
