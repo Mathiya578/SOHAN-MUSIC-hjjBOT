@@ -63,7 +63,7 @@ global.location = "Srilanka, Gampha District,Ganemulla" //ur location
 //bot bomdy 
 global.owner = ['94779499811']
 global.ownertag = '94779499811' //ur tag number
-global.botname = 'AlexaX-Devil-Sudda-MD-BOT' //ur bot name
+global.botname = 'SOHAN-MUSIC-BOT' //ur bot name
 global.linkz = "https://youtube.com/shorts/QEF6hNxffow?feature=share" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtube.com/shorts/QEF6hNxffow?feature=share" //ur website to be displayed
 global.botscript = 'https://wa.me/94779499811' //script link
